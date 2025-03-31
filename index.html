@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morse</title>
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="main-container">
+      <h2>Morse</h2>
+      <div class="encode">
+        <label id="label-encode" for="encode-latin"
+          >Encode Latin to Morse</label
+        >
+        <br />
+        <br />
+        <input
+          id="encode-latin"
+          type="text"
+          maxlength="10"
+          placeholder="Enter your Latin name"
+        />
+        <button id="start-encode" type="submit">START</button>
+        <div class="result-encode-container"></div>
+      </div>
+      <br />
+      <div class="decode">
+        <label id="label-decode" for="decode-morse"
+          >Decode Morse to Latin</label
+        >
+        <br />
+        <br />
+        <input
+          id="decode-morse"
+          type="text"
+          placeholder="Enter your Morse name"
+        />
+        <button id="start-decode" type="submit">START</button>
+        <div class="result-decode-container"></div>
+      </div>
+    </div>
+  </body>
+</html>
